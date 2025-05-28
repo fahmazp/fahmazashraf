@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import { NavMenu } from "./nav-menu";
 import { NavigationSheet } from "./navigation-sheet";
 import { AuroraTextDemo } from "./navbarLogo";
@@ -16,7 +15,10 @@ const Navbar04Page = () => {
           <NavMenu className="hidden md:block" />
 
           <div className="flex items-center gap-3">
+            
+            <div className="hidden sm:block">
             <ButtonHover12/>
+            </div>
 
             {/* <GitHubButton/> */}
             <ModeToggle/>

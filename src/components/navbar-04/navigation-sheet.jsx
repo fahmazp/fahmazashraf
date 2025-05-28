@@ -6,6 +6,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet"
 import { AlignJustify } from "lucide-react"
+import ButtonHover12 from "./navGitbtn"
 
 export function NavigationSheet() {
   return (
@@ -24,7 +25,7 @@ export function NavigationSheet() {
           <a href="#home" className="hover:text-lime-600">Home</a>
         </SheetClose>
         <SheetClose asChild>
-          <a href="#projects" className="hover:text-lime-600">Projects</a>
+          <a href="#works" className="hover:text-lime-600">Works</a>
         </SheetClose>
         <SheetClose asChild>
           <a href="#about" className="hover:text-lime-600">About</a>
@@ -33,6 +34,10 @@ export function NavigationSheet() {
           <a href="#contact" className="hover:text-lime-600">Contact</a>
         </SheetClose>
         </nav>
+
+            <div className="mt-4 sm:hidden block">
+            <ButtonHover12/>
+            </div>
 
       </SheetContent>
     </Sheet>

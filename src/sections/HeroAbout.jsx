@@ -11,14 +11,12 @@ export function HeroAbout() {
 
     <motion.section
       ref={ref}
-      id="about"
       initial={{ opacity: 0, y: 60 }}
       animate={isInView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
       className="mt-2 md:mt-5 text-foreground"
       >
 
-    {/* <section className="mt-2 md:mt-5 text-foreground" id="about"> */}
       <div className="grid grid-cols-1 lg:grid-cols-10 gap-8 items-center">
         
         <div className="lg:col-span-7 space-y-5">

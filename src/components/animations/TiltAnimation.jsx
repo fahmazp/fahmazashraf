@@ -1,4 +1,3 @@
-"use client";
 import { useRef } from "react";
 
 export function AvatarTilt() {
@@ -33,7 +32,7 @@ export function AvatarTilt() {
       ref={avatarRef}
     >
       <img
-        src="/undraw_avatar.svg"
+        src="/undraw-avatar.svg"
         alt="Developer Illustration"
         className="w-full h-full transition-transform duration-300 ease-[cubic-bezier(0.03,0.98,0.52,0.99)] active:scale-110"
       />

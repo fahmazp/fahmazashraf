@@ -32,8 +32,6 @@ export default function SkillsGrid() {
   const skillsRef = useRef(null);
   const toolsRef = useRef(null);
 
-  // const skillsInView = useInView(skillsRef, { once: true });
-  // const toolsInView = useInView(toolsRef, { once: true });
   const isSkillsInView = useInView(skillsRef, {
     once: true,
     amount: 0.3,
