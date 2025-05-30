@@ -153,11 +153,13 @@
 }
 
 body {
-  font-family: "Exo", sans-serif;
+      font-family: "Space Grotesk", sans-serif;
+
 }
 
 p,li {
-  font-family: "Urbanist", sans-serif;
+    font-family: "Plus Jakarta Sans", sans-serif;
+
 }
 button {
   cursor: pointer;
@@ -168,7 +170,8 @@ button {
 }
 
 .urbanist-font {
-  font-family: "Urbanist", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  /* font-size: 14px; */
 }
 
 @media (prefers-color-scheme: dark) {

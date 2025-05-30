@@ -25,7 +25,7 @@ export function HeroAbout() {
           </h1>
 
             <div className="pt-8">
-            <p className="text-xl leading-relaxed text-muted-foreground  mb-3.5">
+            <p className="text-lg leading-relaxed text-muted-foreground  mb-3.5">
               My journey into programming started out of pure curiosity — and somehow, I never looked back.  
               I've definitely learned something, I think...
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="size-5 inline">
@@ -33,14 +33,14 @@ export function HeroAbout() {
                 </svg>
             </p>
 
-            <p className="text-xl leading-relaxed text-muted-foreground mb-3.5">
+            <p className="text-lg leading-relaxed text-muted-foreground mb-3.5">
               I've worked with languages like <span className="text-blue-800 dark:text-indigo-300 font-semibold italic">JavaScript</span> and <span className="text-blue-800 dark:text-indigo-300 font-semibold italic">Core PHP</span>.
             </p>
-            <p className="text-xl leading-relaxed text-muted-foreground mb-3.5">
+            <p className="text-lg leading-relaxed text-muted-foreground mb-3.5">
               My tech stack is mainly the <span className="text-blue-800 dark:text-indigo-300 font-semibold italic">MERN (MongoDB, Express.js, React.js, Node.js)</span> — and I focus on creating scalable, full-stack web applications with solid architecture and clean UI.
             </p>
 
-            <p className="text-xl leading-relaxed text-muted-foreground mb-3.5">
+            <p className="text-lg leading-relaxed text-muted-foreground mb-3.5">
                 Whether it's frontend magic or backend logic, I'm all about crafting experiences that actually make sense for users.
               {/* I aim to build solutions that are not just functional, but also intuitive and efficient. */}
             </p>

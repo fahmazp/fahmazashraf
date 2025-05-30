@@ -60,7 +60,7 @@ export default function SkillsGrid() {
         Professional <span className="text-sky-600 dark:text-sky-400">Skillset</span>
       </h2>
 
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-7 max-w-6xl mx-auto px-4 pb-10 md:pb-14">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-7 max-w-6xl mx-auto  pb-10 md:pb-14">
       {skills.map((skill, idx) => (
      <Card
       key={idx}
@@ -107,7 +107,7 @@ export default function SkillsGrid() {
         <span className="text-purple-600 dark:text-fuchsia-400">Tools</span> I use
       </h2>
 
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-7 max-w-6xl mx-auto px-4">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-7 max-w-6xl mx-auto ">
         {tools.map((tool, idx) => (
           <Card
             key={idx}

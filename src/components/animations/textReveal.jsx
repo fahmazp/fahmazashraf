@@ -5,13 +5,13 @@ export function HeroTextReveal() {
     return (
         <div className="space-y-4 ml-5 md:ml-0">
             <TextAnimate className={"text-black dark:text-white font-[500] tracking-tight text-2xl md:text-3xl "}
-                animation="slideLeft" by="character"
+                animation="slideLeft" by="word"
                 as="h1" duration={2}>
                 Hi There !
             </TextAnimate>
 
             <TextAnimate
-                className="text-sky-700 dark:text-sky-400 font-bold tracking-tighter text-5xl md:text-5xl"
+                className="text-sky-700 dark:text-sky-400 font-bold tracking-tighter text-5xl md:text-5xl uppercase"
                 animation="slideLeft"
                 by="word"
                 as="h1"

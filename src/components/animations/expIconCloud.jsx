@@ -17,7 +17,6 @@ const slugs = [
   "tailwindcss",
   "visualstudiocode",
   "shadcnui",
-  "axios",
   "postman"
 ];
 
