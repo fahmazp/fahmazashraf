@@ -152,6 +152,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
       font-family: "Space Grotesk", sans-serif;
 

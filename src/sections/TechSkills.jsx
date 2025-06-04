@@ -57,7 +57,7 @@ export default function SkillsGrid() {
     >
 
       <h2 className="text-3xl font-bold text-center mb-4 md:mb-8">
-        Professional <span className="text-sky-600 dark:text-sky-400">Skillset</span>
+        Professional <span className="bg-gradient-to-r from-sky-600 via-blue-700 to-lime-500 dark:from-sky-400 dark:via-cyan-600 dark:to-lime-400 bg-clip-text text-transparent">Skillset</span>
       </h2>
 
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-7 max-w-6xl mx-auto  pb-10 md:pb-14">
@@ -104,7 +104,7 @@ export default function SkillsGrid() {
         }}
       >
       <h2 className="text-3xl font-bold text-center mb-4 md:mb-8">
-        <span className="text-purple-600 dark:text-fuchsia-400">Tools</span> I use
+        <span className="bg-gradient-to-l from-indigo-500 via-red-500 to-blue-500 text-transparent bg-clip-text">Tools</span>{" "}I use
       </h2>
 
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-7 max-w-6xl mx-auto ">

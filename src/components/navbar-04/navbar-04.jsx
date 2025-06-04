@@ -20,7 +20,6 @@ const Navbar04Page = () => {
             <ButtonHover12/>
             </div>
 
-            {/* <GitHubButton/> */}
             <ModeToggle/>
             {/* Mobile Menu */}
             <div className="md:hidden overflow-hidden">

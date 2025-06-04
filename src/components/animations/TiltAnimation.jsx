@@ -26,16 +26,20 @@ export function AvatarTilt() {
 
   return (
     <div
-      className="group perspective w-full h-52"
+      className="group perspective w-full h-52 relative "
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
       ref={avatarRef}
     >
-      <img
-        src="/undraw-avatar.svg"
-        alt="Developer Illustration"
-        className="w-full h-full transition-transform duration-300 ease-[cubic-bezier(0.03,0.98,0.52,0.99)] active:scale-110"
-      />
+      
+      <div className="relative w-full h-full">
+        <div className="absolute -inset-1 rounded-lg blur-3xl opacity-35 bg-gradient-to-br from-sky-400 via-blue-400 to-purple-400 dark:from-purple-600 dark:via-blue-600 dark:to-sky-600"></div>
+        <img
+          src="/undraw-avatar.svg"
+          alt="Developer Illustration"
+          className="relative w-full h-full transition-transform duration-300 ease-[cubic-bezier(0.03,0.98,0.52,0.99)] active:scale-110 rounded-lg"
+        />
+      </div>
     </div>
   );
 }
