@@ -1,8 +1,8 @@
 import { AuroraText } from "../magicui/aurora-text";
 
-export function AuroraTextDemo() {
+export function AuroraTextDemo({ className = "" }) {
   return (
-    <h1 className="text-3xl font-bold tracking-tighter lg:text-4xl">
+    <h1 className={`font-bold tracking-tighter ${className}`}>
       <AuroraText>•Fhmz•</AuroraText>
     </h1>
   );

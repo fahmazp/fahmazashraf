@@ -2,8 +2,29 @@ import Navbar04Page from "../navbar-04/navbar-04";
 import { FlickeringGridDemo } from "../animations/flickerGrid";
 import { ScrollProgress } from "../magicui/scroll-progress";
 import { Outlet } from "react-router-dom";
+import { useEffect, useState } from "react";
+import SpinnerSquare from "../animations/loaderDemo";
+import FooterComponent from "@/sections/FooterSection";
+
 
 const AppLayout = () => {
+
+const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    console.log("Loader mounted, starting timer...");
+    const timer = setTimeout(() => {
+      console.log("Timer ended, setting loading to false");
+      setLoading(false);
+    }, 1500);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return <SpinnerSquare />;
+  }
+
   return (
     <div className="relative min-h-screen overflow-hidden scroll-smooth antialiased">
 
@@ -12,19 +33,17 @@ const AppLayout = () => {
       <Navbar04Page/>
 
       <main className="relative z-10 w-full px-4 sm:px-6 md:px-8 pt-[110px] max-w-6xl mx-auto">
-      
       <Outlet/>
-      {/* <HeroText/> */}
-    
-      {/* <div className="container mx-auto px-1.5 sm:px-6 pt-12" id="about">
-        <HeroAbout/>
-        <SkillsGrid/>
-        <ExperienceSection/>
-      </div> */}
-
       </main>
+      
+      
+      <FooterComponent/>
+      
     </div>
   );
 };
 
 export default AppLayout;
+// erica one
+// iceberg
+// Italiana 

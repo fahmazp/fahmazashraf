@@ -21,7 +21,7 @@ export function HeroTextReveal() {
                I'm Fahmaz Ashraf
             </TextAnimate>
 
-            <div className="pt-6 md:pt-12">
+            <div className="pt-6 md:pt-8">
 
             <TypingLoop/>
             </div>

@@ -56,7 +56,6 @@ export function HeroAbout() {
 
       </div>
 
-      {/* <AvailablePulse/> */}
 
     </motion.section>
   )

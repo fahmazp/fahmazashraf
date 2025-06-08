@@ -1,35 +1,49 @@
-import { Link } from "react-router-dom";
+import { motion } from "motion/react"
+import { GitHubStarsButton } from "@/components/animate-ui/buttons/github-stars";
 
 const GitHubChart = () => {
   return (
-    <section
+    <motion.section
+      initial={{ opacity: 0, y: 60 }}
+      whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+          duration: 0.8,
+          ease: [0.16, 1, 0.3, 1], 
+      }}
+      viewport={{ once: true }}
       id="github"
-      className="mt-16 w-full flex flex-col items-center justify-center px-4 sm:px-6"
+      className="pt-12 w-full flex flex-col items-center justify-center px-4 sm:px-6"
     >
       <h2 className="text-3xl font-semibold mb-4 text-center">
         <span className="bg-gradient-to-b from-slate-950 via-violet-800 to-sky-400 dark:from-zinc-200 dark:via-violet-500 dark:to-lime-500 bg-clip-text text-transparent">Code</span> Streaks
       </h2>
 
-      <div className="w-full overflow-x-auto md:overflow-x-hidden">
+      <div className="w-full overflow-x-auto lg:overflow-x-hidden">
 
         <div className="min-w-[700px] flex justify-center">
         <img
-          src="https://ghchart.rshah.org/1e1b4b/fahmazp"
+          src="https://ghchart.rshah.org/4a044e/fahmazp"
           alt="Contribution Chart"
           className="h-auto w-full max-w-5xl object-contain rounded-sm border-2 border-purple-600 dark:border-purple-500 shadow-lg p-2"
         />
       </div>
+
+      </div>
+      <div className="w-full pt-2 sm:ml-2">
+        <p className="text-sm font-medium">190 contributions in the last year</p>
       </div>
 
-      <Link
+      {/* <Link
         to="https://github.com/fahmazp"
         target="_blank"
         rel="noopener noreferrer"
         className="mt-4 inline-block bg-primary text-white dark:text-gray-950 px-4 py-2 rounded hover:bg-primary/90 transition"
       >
         View My GitHub
-      </Link>
-    </section>
+      </Link> */}
+      <GitHubStarsButton username="fahmazp"/>
+
+    </motion.section>
   );
 };
 

@@ -10,7 +10,7 @@ const Navbar04Page = () => {
       <nav
         className="fixed top-2 inset-x-4 h-14 bg-background border dark:border-slate-700/70 max-w-screen-xl mx-auto rounded-full z-50" >
         <div className="h-full flex items-center justify-between mx-auto px-4">
-          <AuroraTextDemo/>
+          <AuroraTextDemo className="text-3xl"/>
           {/* Desktop Menu */}
           <NavMenu className="hidden md:block" />
 
