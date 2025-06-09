@@ -4,7 +4,7 @@ import { ScrollProgress } from "../magicui/scroll-progress";
 import { Outlet } from "react-router-dom";
 import { useEffect, useState } from "react";
 import SpinnerSquare from "../animations/loaderDemo";
-import FooterComponent from "@/sections/FooterSection";
+import FooterComponent from "@/sections/Footer/FooterSection";
 
 
 const AppLayout = () => {

@@ -5,9 +5,7 @@ import { ExperienceSection } from "@/sections/ExpSection";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import GitHubChart from "@/sections/GithubCode";
-import FooterSection from "@/sections/FooterSection";
-import FooterComponent from "@/sections/FooterSection";
-import FooterConnect from "@/sections/FooterConnect";
+import FooterConnect from "@/sections/Footer/FooterConnect";
 
 
 
@@ -41,14 +39,11 @@ export default function Home() {
           <ExperienceSection/>
         </div>
 
-            <GitHubChart/>
+            {/* <GitHubChart/> */}
 
-            <div className="" id="contact">
-              
-              <p>Conatct</p>
-              
-              <FooterConnect/>
-            </div>
+            {/* <div className="" id="contact">
+              {/* <FooterConnect/> 
+            </div> */}
           
     </>
   )
