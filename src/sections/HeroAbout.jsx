@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import { motion, useInView } from "motion/react"
 import { AvatarTilt } from "@/components/animations/TiltAnimation";
+import { ButtonResume } from "@/components/buttons/Resume-btn";
 
 export function HeroAbout() {
 
@@ -44,6 +45,8 @@ export function HeroAbout() {
                 Whether it's frontend magic or backend logic, I'm all about crafting experiences that actually make sense for users.
               {/* I aim to build solutions that are not just functional, but also intuitive and efficient. */}
             </p>
+
+            <ButtonResume/>
             </div>
 
         </div>

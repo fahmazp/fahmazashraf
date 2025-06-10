@@ -30,21 +30,17 @@ export default function Home() {
 
   return (
     <>
-
         <HeroText/>
-    
         <div className="pt-12" id="about">
           <HeroAbout/>
           <SkillsGrid/>
           <ExperienceSection/>
         </div>
 
-            {/* <GitHubChart/> */}
-
+        <GitHubChart/>
             {/* <div className="" id="contact">
               {/* <FooterConnect/> 
             </div> */}
-          
     </>
   )
 }

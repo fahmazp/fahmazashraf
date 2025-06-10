@@ -19,7 +19,7 @@ const countVariants = {
 const LikeButton = React.forwardRef((props, ref) => {
   const {
     className,
-    initialCount = 32,
+    initialCount = 42,
     initialLiked = false,
     label = "Like",
     onLikeChange,

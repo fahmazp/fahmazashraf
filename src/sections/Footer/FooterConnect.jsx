@@ -50,7 +50,7 @@ export default function FooterConnect() {
   ];
 
   return (
-    <div className="relative z-50 max-w-6xl mx-auto px-4 sm:px-6 pt-8 pb-3 text-black dark:text-white">
+    <div className="relative z-50 max-w-6xl mx-auto px-4 sm:px-6 pt-5 sm:pt-8 pb-3 text-black dark:text-white">
       <svg
         ref={svgRef}
         viewBox="0 0 719 96"

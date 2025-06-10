@@ -4,7 +4,7 @@ import { LikeButton } from "./LikeProfile";
 
 export default function FooterChatLinks() {
   return (
-    <div className="flex flex-col sm:flex-row items-center sm:items-start justify-center sm:justify-between gap-4 max-w-6xl mx-auto pt-4 px-1">
+    <div className="flex flex-col sm:flex-row items-center sm:items-start justify-center sm:justify-between gap-4 max-w-6xl mx-auto pt-8 px-2">
       {/* Chat Bubble Section */}
       <div className="flex items-start gap-2 w-full sm:w-auto">
         <span className="relative inline-flex size-10 items-center justify-center rounded-full bg-gray-500 ring-2 ring-gray-300/50 dark:ring-gray-200/75">
@@ -13,11 +13,11 @@ export default function FooterChatLinks() {
         </span>
 
         <div className="flex flex-col gap-1.5 w-full max-w-[320px] leading-1.5">
-          <p className="border bg-gray-50 dark:bg-zinc-950 px-2 py-1.5 text-sm rounded-sm border-gray-400 max-sm:max-w-[90%]">
+          <p className="border bg-gray-50 dark:bg-zinc-950 px-2 py-1.5 text-sm rounded-bl-xs rounded-sm border-gray-400 max-sm:max-w-[90%]">
             Thanks for checking out my featured work 🔥
           </p>
-          <div className="border bg-gray-50 dark:bg-zinc-950 px-2 py-1.5 text-sm rounded-sm border-gray-400 max-sm:max-w-[90%]">
-            Got a role that might be a good fit? Hit me up — I’m ready to dive in.
+          <div className="border bg-gray-50 dark:bg-zinc-950 px-2 py-1.5 text-sm rounded-tl-xs rounded-sm border-gray-400 max-sm:max-w-[90%]">
+            Got a role that might be a good fit? Hit me up — I'm ready to dive in.
             <div>Reach out via any of the links! ➡️</div>
           </div>
           <span className="text-xs font-normal">

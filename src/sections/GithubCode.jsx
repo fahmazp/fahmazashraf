@@ -12,7 +12,7 @@ const GitHubChart = () => {
       }}
       viewport={{ once: true }}
       id="github"
-      className="pt-12 w-full flex flex-col items-center justify-center px-4 sm:px-6"
+      className="pt-2 sm:pt-8 pb-10 w-full flex flex-col items-center justify-center px-4 sm:px-6"
     >
       <h2 className="text-3xl font-semibold mb-4 text-center">
         <span className="bg-gradient-to-b from-slate-950 via-violet-800 to-sky-400 dark:from-zinc-200 dark:via-violet-500 dark:to-lime-500 bg-clip-text text-transparent">Code</span> Streaks
@@ -33,14 +33,6 @@ const GitHubChart = () => {
         <p className="text-sm font-medium">190 contributions in the last year</p>
       </div>
 
-      {/* <Link
-        to="https://github.com/fahmazp"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="mt-4 inline-block bg-primary text-white dark:text-gray-950 px-4 py-2 rounded hover:bg-primary/90 transition"
-      >
-        View My GitHub
-      </Link> */}
       <GitHubStarsButton username="fahmazp"/>
 
     </motion.section>
