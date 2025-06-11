@@ -5,6 +5,7 @@ import { Outlet } from "react-router-dom";
 import { useEffect, useState } from "react";
 import SpinnerSquare from "../animations/loaderDemo";
 import FooterComponent from "@/sections/Footer/FooterSection";
+import { ScrollToTop } from "@/sections/ScrollToTop";
 
 
 const AppLayout = () => {
@@ -12,9 +13,7 @@ const AppLayout = () => {
 const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    console.log("Loader mounted, starting timer...");
     const timer = setTimeout(() => {
-      console.log("Timer ended, setting loading to false");
       setLoading(false);
     }, 1500);
 
@@ -27,7 +26,8 @@ const [loading, setLoading] = useState(true);
 
   return (
     <div className="relative min-h-screen overflow-hidden scroll-smooth antialiased">
-
+    
+    <ScrollToTop/>
     <FlickeringGridDemo/>
       <ScrollProgress className="fixed top-0 left-0 right-0 z-[60] h-[3px] bg-gradient-to-r from-sky-400 to-lime-500" />
       <Navbar04Page/>
@@ -44,6 +44,4 @@ const [loading, setLoading] = useState(true);
 };
 
 export default AppLayout;
-// erica one
-// iceberg
-// Italiana 
+

@@ -30,7 +30,7 @@ const GitHubChart = () => {
 
       </div>
       <div className="w-full pt-2 sm:ml-2">
-        <p className="text-sm font-medium">190 contributions in the last year</p>
+        <p className="text-sm font-medium">200 contributions in the last year</p>
       </div>
 
       <GitHubStarsButton username="fahmazp"/>

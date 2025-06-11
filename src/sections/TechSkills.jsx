@@ -138,6 +138,16 @@ export default function SkillsGrid() {
           </Card>
         ))}
       </div>
+
+      <div className="pt-4">
+        <motion.p className="text-center font-bold bg-gradient-to-r from-blue-700 via-black to-blue-700 dark:from-violet-400 dark:via-white dark:to-violet-400 bg-[length:200%_auto] bg-clip-text text-transparent animate-shimmer"
+        initial={{ opacity: 0, y: 10 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}>
+          ...and many more!
+        </motion.p>
+      </div>
+      
       </motion.div>
 
     </section>

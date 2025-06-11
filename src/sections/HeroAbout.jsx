@@ -15,7 +15,7 @@ export function HeroAbout() {
       initial={{ opacity: 0, y: 60 }}
       animate={isInView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
-      className="mt-2 md:mt-5 text-foreground"
+      className="my-3 md:my-5 text-foreground"
       >
 
       <div className="grid grid-cols-1 lg:grid-cols-10 gap-8 items-center">
