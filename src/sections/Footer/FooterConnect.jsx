@@ -5,11 +5,13 @@ import { useInView } from "framer-motion";
 export default function FooterConnect() {
   const controls = useAnimation();
   const svgRef = useRef(null);
-  const isInView = useInView(svgRef, { once: true, margin: "0px 0px -50px 0px" });
+  const isInView = useInView(svgRef, { once: false, margin: "0px 0px -20px 0px" });
 
   useEffect(() => {
     if (isInView) {
       controls.start("visible");
+    } else {
+    controls.start("hidden");
     }
   }, [isInView, controls]);
 

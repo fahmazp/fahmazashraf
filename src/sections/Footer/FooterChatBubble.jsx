@@ -7,9 +7,9 @@ export default function FooterChatLinks() {
     <div className="flex flex-col sm:flex-row items-center sm:items-start justify-center sm:justify-between gap-4 max-w-6xl mx-auto pt-8 px-2">
       {/* Chat Bubble Section */}
       <div className="flex items-start gap-2 w-full sm:w-auto">
-        <span className="relative inline-flex size-10 items-center justify-center rounded-full bg-gray-500 ring-2 ring-gray-300/50 dark:ring-gray-200/75">
+        <span className="relative inline-flex size-10 items-center justify-center rounded-full bg-gray-500 ring-2 ring-gray-500/75 dark:ring-gray-200/75">
           <span className="text-base font-medium text-gray-200">FA</span>
-          <span className="absolute right-0 bottom-0 block size-2.5 rounded-full bg-green-400 ring ring-white" />
+          <span className="absolute right-0 top-0 block size-2.5 rounded-full bg-emerald-400 ring ring-white" />
         </span>
 
         <div className="flex flex-col gap-1.5 w-full max-w-[320px] leading-1.5">

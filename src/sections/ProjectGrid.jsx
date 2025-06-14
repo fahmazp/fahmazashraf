@@ -2,20 +2,20 @@ import { ProjectCard } from "./ProjectCard";
 
 const projects = [
   {
-    title: "My Portfolio",
+    title: "Coming soon",
     description: "Personal portfolio website built with React, Tailwind, and Framer Motion.",
     image: "/projects/portfolio.png",
     tech: ["React", "Tailwind", "Framer Motion"],
-    github: "https://github.com/your-portfolio",
-    live: "https://yourdomain.com",
+    github: "https://github.com/fahmazp",
+    live: "https://example.com",
   },
   {
-    title: "Movie DB, Review and Rating App",
+    title: "Coming soon",
     description: "Movie review and rating app using MERN stack tech",
     image: "/projects/ecommerce.png",
     tech: ["React", "MongoDB", "Express", "Node" , "Tailwind"],
-    github: "https://github.com/your-ecommerce",
-    live: "https://ecommerce-site.com",
+    github: "https://github.com/fahmazp",
+    live: "https://example.com",
   },
   // Add more
 ];
