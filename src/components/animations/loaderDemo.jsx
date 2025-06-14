@@ -1,30 +1,47 @@
-export default function SpinnerSquare() {
+import { useEffect, useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
+
+export default function SpinnerSquare () {
+  const [text, setText] = useState("");
+  const fullText = "Loading...";
+  const speed = 150;
+
+useEffect(() => {
+  let i = 0;
+  let timeoutId;
+
+  const type = () => {
+    setText(fullText.slice(0, i));
+    i++;
+
+    // If finished typing, pause longer before resetting
+    if (i > fullText.length) {
+      timeoutId = setTimeout(() => {
+        i = 0;
+        type(); 
+      }, 1200); 
+    } else {
+      timeoutId = setTimeout(type, speed);
+    }
+  };
+
+  type();
+  return () => clearTimeout(timeoutId);
+}, []);
+
+
   return (
-    <div className="fixed inset-0 flex items-center justify-center">
-      
-      <svg
-        width="80"
-        height="80"
-        viewBox="0 0 24 24"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        aria-live="polite"
-        aria-busy="true"
+    <div className="flex justify-center items-center h-screen ">
+      <motion.div
+        className="relative text-3xl sm:text-4xl font-bold tracking-widest text-sky-400 glitch-text font-mono"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
       >
-        <path
-          d="M7 10H3V14H7V10Z"
-          className="animate animate-bounce fill-sky-500 "
-        />
-        <path
-          d="M14 10H10V14H14V10Z"
-          className="animate animate-bounce fill-sky-500 [animation-delay:.1s]"
-        />
-        <path
-          d="M21 10H17V14H21V10Z"
-          className="animate animate-bounce fill-sky-500 [animation-delay:.2s]"
-        />
-      </svg>
-      {/*<!-- End Square horizontal sm sized spinner  --> */}
+        {text}
+        <span className="animate-blink ml-1">|</span>
+      </motion.div>
     </div>
-  )
-}
+  );
+};
+

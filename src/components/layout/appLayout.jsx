@@ -21,7 +21,11 @@ const [loading, setLoading] = useState(true);
   }, []);
 
   if (loading) {
-    return <SpinnerSquare />;
+      return (
+    <div className="flex items-center justify-center h-screen ">
+      <SpinnerSquare />
+    </div>
+    );
   }
 
   return (
