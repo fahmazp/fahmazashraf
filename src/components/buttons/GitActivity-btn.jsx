@@ -1,6 +1,6 @@
 import React, { useState, useCallback, forwardRef } from "react";
 import { StarIcon } from "lucide-react";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 

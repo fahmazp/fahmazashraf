@@ -1,4 +1,5 @@
-import { motion } from "motion/react"
+import { ChevronRight } from "@/components/icon-animate/arrowIcon";
+import { motion } from "framer-motion"
 import React, { lazy, Suspense } from "react";
 
 const IconCloudDemo = lazy(() =>
@@ -30,10 +31,10 @@ export function ExperienceSection() {
               Junior PHP Developer – Tapclone, Kochi
             </p>
             <p className="text-sm text-muted-foreground">Mar 2023 - Feb 2024</p>
-            <ul className="list-disc list-inside space-y-1 pt-2">
-              <li>Built and maintained web apps using Core PHP, HTML, CSS, JS</li>
-              <li>Worked with teams to bring client ideas to life</li>
-              <li>Improved UX with responsive, mobile-friendly layouts</li>
+            <ul className="list-none list-inside space-y-1 pt-2">
+              <li className="flex items-center"><ChevronRight/> Built and maintained web apps using Core PHP, HTML, CSS, JS</li>
+              <li className="flex items-center"><ChevronRight/> Worked with teams to bring client ideas to life</li>
+              <li className="flex items-center"><ChevronRight/> Improved UX with responsive, mobile-friendly layouts</li>
             </ul>
           </div>
         </motion.div>

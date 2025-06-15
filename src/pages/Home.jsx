@@ -19,7 +19,6 @@ export default function Home() {
     if (scrollToId) {
       const el = document.getElementById(scrollToId);
       if (el) {
-        // Delay slightly to make sure DOM is ready
         setTimeout(() => {
           el.scrollIntoView({ behavior: "smooth" });
         }, 100);
@@ -38,9 +37,6 @@ export default function Home() {
         </div>
 
         <GitHubChart/>
-            {/* <div className="" id="contact">
-              {/* <FooterConnect/> 
-            </div> */}
     </>
   )
 }

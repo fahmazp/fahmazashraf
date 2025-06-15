@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils";
 import { AnimatedShinyText } from "../magicui/animated-shiny-text";
 import { Send } from "lucide-react";
-import { motion } from "motion/react"
+import { motion } from "framer-motion"
 
 export function AnimatedShinyTextDemo() {
   return (

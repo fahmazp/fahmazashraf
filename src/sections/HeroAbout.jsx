@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import { motion, useInView } from "motion/react"
+import { motion, useInView } from "framer-motion"
 import { AvatarTilt } from "@/components/animations/TiltAnimation";
 import { ButtonResume } from "@/components/buttons/Resume-btn";
 

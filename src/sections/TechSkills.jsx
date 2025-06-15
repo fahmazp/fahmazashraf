@@ -2,7 +2,7 @@ import { cn } from "@/lib/utils";
 import { Card, CardContent } from "@/components/ui/card";
 import { BorderBeam } from "@/components/magicui/border-beam";
 import { useRef } from "react";
-import { motion, useInView } from "motion/react"
+import { motion, useInView } from "framer-motion"
 
 const skills = [
   { image: <img src="/skillicons/jssvg-1.svg" className="size-18 md:size-16 dark:invert" alt="JavaScript"  /> },

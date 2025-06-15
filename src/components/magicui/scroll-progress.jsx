@@ -1,6 +1,6 @@
 "use client";;
 import { cn } from "@/lib/utils";
-import { motion, useScroll } from "motion/react";
+import { motion, useScroll } from "framer-motion";
 import React from "react";
 
 export const ScrollProgress = React.forwardRef(({ className, ...props }, ref) => {

@@ -158,8 +158,14 @@ html {
 
 body {
       font-family: "Space Grotesk", sans-serif;
-
 }
+
+html,
+body {
+  transition: background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1), color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      /* transition: background-color 0.4s ease, color 0.4s ease; */
+}
+
 
 p,li {
     font-family: "Plus Jakarta Sans", sans-serif;
@@ -325,4 +331,11 @@ button {
 
 .animate-shimmer {
   animation: shimmer 2.5s infinite linear;
+}
+
+.bg-gradient-conic {
+  background-image: conic-gradient(at bottom right, #059669, #155e75, #a8e600);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
