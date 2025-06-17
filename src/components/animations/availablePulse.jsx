@@ -13,9 +13,8 @@ export function AvailablePulse() {
       <div className="inline-flex items-center gap-2 rounded-full bg-muted px-3 py-1.5 shadow-sm border md:text-base text-muted-foreground dark:bg-background dark:text-white ring-1 ring-sky-400/30 ring-inset">
 
 
-      <Code className="w-4 h-4 animate-aurora"/>
+      <Code className="w-3 h-3 animate-aurora"/>
         <span className="text-[15px] animate-pulse urbanist-font">Available for work</span>
-      <CodeXml className="w-4 h-4 animate-aurora"/>
 
         {/* Ping Dot */}
         <span className="relative flex h-3.5 w-3.5">

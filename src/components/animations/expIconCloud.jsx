@@ -9,7 +9,6 @@ const slugs = [
   "nodedotjs",
   "express",
   "jsonwebtokens",
-  "vercel",
   "figma",
   "git",
   "github",
