@@ -1,4 +1,5 @@
 import { motion } from "framer-motion"
+import { Code, CodeXml } from "lucide-react";
 
 export function AvailablePulse() {
   return (
@@ -10,7 +11,11 @@ export function AvailablePulse() {
       className="z-10 flex items-center gap-2 md:absolute md:right-48 md:top-[440px] justify-center"
     >
       <div className="inline-flex items-center gap-2 rounded-full bg-muted px-3 py-1.5 shadow-sm border md:text-base text-muted-foreground dark:bg-background dark:text-white ring-1 ring-sky-400/30 ring-inset">
+
+
+      <Code className="w-4 h-4 animate-aurora"/>
         <span className="text-[15px] animate-pulse urbanist-font">Available for work</span>
+      <CodeXml className="w-4 h-4 animate-aurora"/>
 
         {/* Ping Dot */}
         <span className="relative flex h-3.5 w-3.5">
@@ -19,6 +24,7 @@ export function AvailablePulse() {
           {/* Solid dot */}
           <span className="relative inline-flex rounded-full h-3.5 w-3.5 bg-lime-600 shadow-[0_0_6px_rgba(34,197,94,0.6)]" />
         </span>
+        
       </div>
     </motion.div>
   );

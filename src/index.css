@@ -334,7 +334,7 @@ button {
 }
 
 .bg-gradient-conic {
-  background-image: conic-gradient(at bottom right, #059669, #155e75, #a8e600);
+  background-image: conic-gradient(at bottom right, #0ca676, #155e75, #a8e600);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;

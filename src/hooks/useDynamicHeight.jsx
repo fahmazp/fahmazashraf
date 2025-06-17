@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 export function useViewportHeight() {
-  const [height, setHeight] = useState(900); 
+  const [height, setHeight] = useState(1000); 
 
   useEffect(() => {
     const handleResize = () => {
