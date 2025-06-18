@@ -181,7 +181,6 @@ button {
 
 .urbanist-font {
   font-family: "Plus Jakarta Sans", sans-serif;
-  /* font-size: 14px; */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -273,7 +272,7 @@ button {
 
 
 .animated-avatar {
-    transition: transform 400ms cubic-bezier(0.03, 0.98, 0.52, 0.99);
+  transition: transform 400ms cubic-bezier(0.03, 0.98, 0.52, 0.99);
   transform-style: preserve-3d;
   transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);
   transform-origin: center;
@@ -334,7 +333,7 @@ button {
 }
 
 .bg-gradient-conic {
-  background-image: conic-gradient(at bottom right, #0ca676, #155e75, #a8e600);
+  background-image: conic-gradient(at bottom right, #0ca676, #50c878, #a8e600);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;

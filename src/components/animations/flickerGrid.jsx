@@ -5,14 +5,14 @@ import { useViewportHeight } from "@/hooks/useDynamicHeight";
 export function FlickeringGridDemo() {
 
   const height = useViewportHeight();
-  const [color, setColor] = useState("#312e81");
+  const [color, setColor] = useState("#3f3f46");
   const [isMobile, setIsMobile] = useState(false);
 
 // Handle theme changes (dark/light)
   useEffect(() => {
     const updateThemeColor = () => {
       const isDark = document.documentElement.classList.contains("dark");
-      setColor(isDark ? "#312e81" : "#93c5fd");
+      setColor(isDark ? "#3f3f46" : "#93c5fd");
     };
 
     updateThemeColor(); 
