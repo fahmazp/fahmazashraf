@@ -17,7 +17,6 @@ const projects = [
     github: "https://github.com/fahmazp",
     live: "https://example.com",
   },
-  // Add more
 ];
 
 export function ProjectGrid() {
