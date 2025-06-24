@@ -166,7 +166,6 @@ body {
       /* transition: background-color 0.4s ease, color 0.4s ease; */
 }
 
-
 p,li {
     font-family: "Plus Jakarta Sans", sans-serif;
 
@@ -270,7 +269,6 @@ button {
   }
 }
 
-
 .animated-avatar {
   transition: transform 400ms cubic-bezier(0.03, 0.98, 0.52, 0.99);
   transform-style: preserve-3d;
@@ -283,7 +281,7 @@ button {
 }
 
 .pulse-anim {
-  
+
   display: block;
   width: 16px;
   height: 16px;

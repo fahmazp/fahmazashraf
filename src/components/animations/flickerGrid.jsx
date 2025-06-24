@@ -5,14 +5,14 @@ import { useViewportHeight } from "@/hooks/useDynamicHeight";
 export function FlickeringGridDemo() {
 
   const height = useViewportHeight();
-  const [color, setColor] = useState("#3f3f46");
+  const [color, setColor] = useState("#292524");
   const [isMobile, setIsMobile] = useState(false);
 
 // Handle theme changes (dark/light)
   useEffect(() => {
     const updateThemeColor = () => {
       const isDark = document.documentElement.classList.contains("dark");
-      setColor(isDark ? "#3f3f46" : "#93c5fd");
+      setColor(isDark ? "#292524" : "#93c5fd");
     };
 
     updateThemeColor(); 
@@ -40,8 +40,8 @@ export function FlickeringGridDemo() {
     <div className="fixed inset-0 z-0 w-full h-[100vh] overflow-hidden bg-background dark:bg-dar">
       <FlickeringGrid
         className="relative inset-0 z-0 [mask-image:radial-gradient(700px_circle_at_center,white,transparent)]"
-        squareSize={4}
-        gridGap={5}
+        squareSize={3}
+        gridGap={4}
         color={color}
         maxOpacity={0.8}
         flickerChance={0.1}

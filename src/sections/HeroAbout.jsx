@@ -2,6 +2,7 @@ import { useRef } from "react";
 import { motion, useInView } from "framer-motion"
 import { AvatarTilt } from "@/components/animations/TiltAnimation";
 import { ButtonResume } from "@/components/buttons/Resume-btn";
+import TextSplitFalloff from "@/components/animations/Text-split-animate/splitHeadingTxt";
 
 export function HeroAbout() {
 
@@ -21,9 +22,12 @@ export function HeroAbout() {
       <div className="grid grid-cols-1 lg:grid-cols-10 gap-8 items-center">
         
         <div className="lg:col-span-7 space-y-5">
-          <h1 className="font-semibold text-[38px] mb-3 leading-10 text-center">
+          <h1 className="font-semibold text-[38px] text-center mb-3 leading-10 sm:hidden">
             LET ME <span className="text-sky-700 dark:text-sky-400">INTRODUCE MYSELF</span>
           </h1>
+          <div className="hidden sm:block">
+            <TextSplitFalloff/>
+          </div>
 
             <div className="pt-8">
             <p className="text-lg leading-relaxed text-muted-foreground  mb-3.5">

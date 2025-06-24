@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { BorderBeam } from "@/components/magicui/border-beam";
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion"
+import TextSplitSkills from "@/components/animations/Text-split-animate/splitHeadingTxt_2";
 
 const skills = [
   { image: <img src="/skillicons/jssvg-1.svg" className="size-18 md:size-16 dark:invert" alt="JavaScript"  /> },
@@ -18,6 +19,10 @@ const skills = [
   { image: <img src="/skillicons/icons8-css3.svg" className="size-18 md:size-16 dark:invert" alt="Css3"  /> },
   { image: <img src="/skillicons/icons8-bootstrap.svg" className="size-18 md:size-16 dark:invert" alt="Bootstrap"  /> },
   { image: <img src="/skillicons/shadcn-ui.svg" className="size-18 md:size-16 dark:invert" alt="Shadcn"  /> },
+  { image: <> <img src="/skillicons/motion.svg" className="size-18 md:size-16 dark:hidden" alt="Framer Motion"  /> 
+              <img src="/skillicons/motion_dark.svg" className="size-18 md:size-16 hidden dark:block" alt="Framer Motion"  /> 
+           </>
+  },
 ];
 
 const tools = [
@@ -48,16 +53,17 @@ export default function SkillsGrid() {
 
     <motion.div
       ref={skillsRef}
-      initial={{ opacity: 0, y: 60 }}
+      initial={{ opacity: 0, y: 30 }}
       animate={isSkillsInView ? { opacity: 1, y: 0 } : {}}
       transition={{
-          duration: 0.8,
-          ease: [0.16, 1, 0.3, 1], 
+          duration: 0.5,
+          ease: [0.22, 1, 0.36, 1], 
       }}
     >
 
       <h2 className="text-3xl font-bold text-center mb-4 md:mb-8">
-        Professional <span className="bg-gradient-to-r from-sky-600 via-blue-700 to-lime-500 dark:from-sky-400 dark:via-cyan-600 dark:to-lime-400 bg-clip-text text-transparent">Skillset</span>
+        {/* Professional <span className="bg-gradient-to-r from-sky-600 via-blue-700 to-lime-500 dark:from-sky-400 dark:via-cyan-600 dark:to-lime-400 bg-clip-text text-transparent">Skillset</span> */}
+        <TextSplitSkills/>
       </h2>
 
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-7 max-w-6xl mx-auto  pb-10 md:pb-14">
@@ -98,7 +104,7 @@ export default function SkillsGrid() {
         initial={{ opacity: 0, scale: 0.95 }}
         animate={isToolsInView ? { opacity: 1, scale: 1 } : {}}
         transition={{
-          duration: 0.9,
+          duration: 0.7,
           ease: [0.22, 1, 0.36, 1],
           delay: 0.1,
         }}

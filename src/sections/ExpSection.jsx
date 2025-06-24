@@ -13,10 +13,9 @@ export function ExperienceSection() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-1 sm:gap-10 items-center ">
 
-        {/* Experience Text Content */}
         <motion.div
-          initial={{ opacity: 0, x: -60 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: 60 }}
+          whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, ease: [0.4, 0, 0.2, 1] }}
           viewport={{ once: true }}
         >

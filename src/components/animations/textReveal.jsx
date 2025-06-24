@@ -4,7 +4,7 @@ import { TypingLoop } from "./heroTypeAnimation";
 export function HeroTextReveal() {
     return (
         <div className="space-y-4 ml-5 md:ml-0">
-            <TextAnimate className={"text-black dark:text-white font-[500] tracking-tight text-2xl md:text-3xl "}
+            <TextAnimate className={"text-sky-700 dark:text-sky-500 tracking-tight text-xl md:text-2xl "}
                 animation="slideLeft" by="word"
                 as="h1" duration={2}>
                 Hi There !

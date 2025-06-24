@@ -1,29 +1,31 @@
 import { ProjectCard } from "./ProjectCard";
+import ProjectsCards from "./Projects-cards";
 
 const projects = [
   {
-    title: "Coming soon",
-    description: "Personal portfolio website built with React, Tailwind, and Framer Motion.",
-    image: "/projects/portfolio.png",
-    tech: ["React", "Tailwind", "Framer Motion"],
+    title: "HoneyPopcorn - Review & Rating App",
+    description: "A dynamic, full-featured movie database and review platform built with the MERN stack, enabling users to browse, rate, and review films in real time,with secure user authentication and an admin dashboard for content management.",
+    image: "/works/ss-movie.png",
+    tech: ["React", "MongoDB", "Express", "Node" , "Tailwind" , "+ More"],
     github: "https://github.com/fahmazp",
-    live: "https://example.com",
+    live: "https://movie-review-frontend-ten.vercel.app/",
   },
   {
-    title: "Coming soon",
-    description: "Movie review and rating app using MERN stack tech",
-    image: "/projects/ecommerce.png",
-    tech: ["React", "MongoDB", "Express", "Node" , "Tailwind"],
+    title: "Portfolio",
+    description: "Personal portfolio website built with React, Tailwind, and Framer Motion.",
+    image: "/works/ss-portfolio.png",
+    tech: ["React", "Tailwind", "Framer Motion" , "+ More"],
     github: "https://github.com/fahmazp",
-    live: "https://example.com",
+    live: "https://fahmazashraf.vercel.app/",
   },
 ];
 
 export function ProjectGrid() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 py-12">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 py-12">
       {projects.map((proj, index) => (
-        <ProjectCard key={index} project={proj} />
+        // <ProjectCard key={index} project={proj} />
+        <ProjectsCards key={index} project={proj}/>
       ))}
     </div>
   );

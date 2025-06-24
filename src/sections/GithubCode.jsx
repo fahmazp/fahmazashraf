@@ -1,5 +1,6 @@
 import { motion } from "framer-motion"
 import { GitHubStarsButton } from "@/components/animate-ui/buttons/github-stars";
+import TextSplitGithub from "@/components/animations/Text-split-animate/splitHeadingTxt_3";
 
 const GitHubChart = () => {
   return (
@@ -15,7 +16,7 @@ const GitHubChart = () => {
       className="pt-2 sm:pt-8 pb-10 w-full flex flex-col items-center justify-center px-4 sm:px-6"
     >
       <h2 className="text-3xl font-semibold mb-4 text-center">
-        <span className="bg-gradient-to-b from-slate-950 via-violet-800 to-sky-400 dark:from-zinc-200 dark:via-violet-500 dark:to-lime-500 bg-clip-text text-transparent">Code</span> Streaks
+        <TextSplitGithub/>
       </h2>
 
       <div className="w-full overflow-x-auto lg:overflow-x-hidden">

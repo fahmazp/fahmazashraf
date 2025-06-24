@@ -8,7 +8,7 @@ const Navbar04Page = () => {
   return (
     
       <nav
-        className="fixed top-2 inset-x-4 h-14 bg-background border dark:border-slate-700/70 max-w-screen-xl mx-auto rounded-full z-50" >
+        className="fixed top-2 inset-x-4 h-14 bg-background/10 backdrop-blur-md border border-white/90 dark:border-slate-900/20 max-w-screen-xl mx-auto rounded-full z-50 shadow-md">
         <div className="h-full flex items-center justify-between mx-auto px-4">
           <AuroraTextDemo className="text-3xl"/>
           {/* Desktop Menu */}
