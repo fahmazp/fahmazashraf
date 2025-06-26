@@ -19,11 +19,11 @@ const projects = [
   },
   {
     title: "GTA IV",
-    description: "Personal portfolio website built with React, Tailwind, and Framer Motion.",
+    description: "An animated frontend showcase built in React.js celebrating the Grand Theft Auto franchise, featuring randomized images, trivia, and GSAP-driven immersive animations.",
     image: "/works/shotsnapp-1750956820.43.png",
-    tech: ["Javascript", "React", "Tailwind", "+ More"],
+    tech: ["Javascript", "React", "Tailwind", "GSAP", "+ More"],
     github: "https://github.com/fahmazp",
-    live: "https://fahmazashraf.vercel.app/",
+    live: "/",
   },
 ];
 
