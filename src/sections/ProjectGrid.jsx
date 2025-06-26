@@ -1,4 +1,3 @@
-import { ProjectCard } from "./ProjectCard";
 import ProjectsCards from "./Projects-cards";
 
 const projects = [
@@ -15,6 +14,14 @@ const projects = [
     description: "Personal portfolio website built with React, Tailwind, and Framer Motion.",
     image: "/works/ss-portfolio.png",
     tech: ["React", "Tailwind", "Framer Motion" , "+ More"],
+    github: "https://github.com/fahmazp",
+    live: "https://fahmazashraf.vercel.app/",
+  },
+  {
+    title: "GTA IV",
+    description: "Personal portfolio website built with React, Tailwind, and Framer Motion.",
+    image: "/works/shotsnapp-1750956820.43.png",
+    tech: ["Javascript", "React", "Tailwind", "+ More"],
     github: "https://github.com/fahmazp",
     live: "https://fahmazashraf.vercel.app/",
   },
