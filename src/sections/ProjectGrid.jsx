@@ -23,7 +23,7 @@ const projects = [
     image: "/works/shotsnapp-1750956820.43.png",
     tech: ["Javascript", "React", "Tailwind", "GSAP", "+ More"],
     github: "https://github.com/fahmazp",
-    live: "/",
+    live: "https://gta-verse-dev.vercel.app/",
   },
 ];
 
