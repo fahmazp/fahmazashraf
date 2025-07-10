@@ -2,6 +2,9 @@ import HeroSvg from "@/components/animations/svgIllustration";
 import { HeroTextReveal } from "@/components/animations/textReveal";
 import { AnimatedShinyTextDemo } from "@/components/animations/shinyText";
 import { AvailablePulse } from "@/components/animations/availablePulse";
+import HeroShapeTri from "@/components/icon-animate/heroShapeTri";
+import HeroShapeHex from "@/components/icon-animate/heroShapeHex";
+import ZigzagLineDraw from "@/components/icon-animate/ZigzagLineDraw";
 
 export function HeroText() {
   return (
@@ -14,6 +17,9 @@ export function HeroText() {
         
         <HeroSvg/>
         <AvailablePulse/>
+        <HeroShapeTri/>
+        <HeroShapeHex/>
+        <ZigzagLineDraw/>
       </div>
     </div>
   )

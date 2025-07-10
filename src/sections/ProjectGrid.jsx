@@ -4,7 +4,7 @@ const projects = [
   {
     title: "HoneyPopcorn - Review & Rating App",
     description: "A dynamic, full-featured movie database and review platform built with the MERN stack, enabling users to browse, rate, and review films in real time,with secure user authentication and an admin dashboard for content management.",
-    image: "/works/ss-movie.png",
+    image: "/works/works-movie.png",
     tech: ["React", "MongoDB", "Express", "Node" , "Tailwind" , "+ More"],
     github: "https://github.com/fahmazp",
     live: "https://movie-review-frontend-ten.vercel.app/",
@@ -20,7 +20,7 @@ const projects = [
   {
     title: "GTA IV",
     description: "An animated frontend showcase built in React.js celebrating the Grand Theft Auto franchise, featuring randomized images, trivia, and GSAP-driven immersive animations.",
-    image: "/works/shotsnapp-1750956820.43.png",
+    image: "/works/works-gta.png",
     tech: ["Javascript", "React", "Tailwind", "GSAP", "+ More"],
     github: "https://github.com/fahmazp",
     live: "https://gta-verse-dev.vercel.app/",

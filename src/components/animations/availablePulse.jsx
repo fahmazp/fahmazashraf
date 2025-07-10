@@ -1,5 +1,5 @@
 import { motion } from "framer-motion"
-import { Code, CodeXml } from "lucide-react";
+import { Code } from "lucide-react";
 
 export function AvailablePulse() {
   return (

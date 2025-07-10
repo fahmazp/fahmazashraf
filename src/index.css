@@ -269,6 +269,18 @@ button {
   }
 }
 
+/* .txt-shad {
+  text-shadow: rgb(255, 0, 87) 2px 2px 0px, rgb(60, 255, 0) 4px 4px 0px;
+} */
+
+.txt-shadow {
+  text-shadow:1px 1px 0px oklch(0.488 0.243 264.376),
+    2px 2px 0px oklch(0.696 0.17 162.48)
+    /* 6px 6px 0px var(--chart-3); */
+}
+
+
+
 .animated-avatar {
   transition: transform 400ms cubic-bezier(0.03, 0.98, 0.52, 0.99);
   transform-style: preserve-3d;
@@ -294,6 +306,15 @@ button {
 .pulse-anim:hover {
   animation: none;
 }
+
+.tri-shape {
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 16px solid #059669;
+}
+
 
 @-webkit-keyframes ping {
   0% {
