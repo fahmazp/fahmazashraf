@@ -1,3 +1,4 @@
+import { AbstractShape } from "@/components/icon-animate/AbstractShape";
 import { ChevronRight } from "@/components/icon-animate/arrowIcon";
 import { motion } from "framer-motion"
 import React, { lazy, Suspense } from "react";
@@ -36,6 +37,8 @@ export function ExperienceSection() {
               <li className="flex items-center"><ChevronRight/> Improved UX with responsive, mobile-friendly layouts</li>
             </ul>
           </div>
+
+          <AbstractShape/>
         </motion.div>
 
         <div className="flex justify-center">

@@ -3,6 +3,7 @@ import { motion, useInView } from "framer-motion"
 import { AvatarTilt } from "@/components/animations/TiltAnimation";
 import { ButtonResume } from "@/components/buttons/Resume-btn";
 import TextSplitFalloff from "@/components/animations/Text-split-animate/splitHeadingTxt";
+import ZigzagFlowLine from "@/components/icon-animate/ZigzagFlowLine";
 
 export function HeroAbout() {
 
@@ -29,7 +30,7 @@ export function HeroAbout() {
             <TextSplitFalloff/>
           </div>
 
-            <div className="pt-8">
+            <div className="pt-8 relative">
             <p className="text-lg leading-relaxed text-muted-foreground  mb-3.5">
               My journey into programming started out of pure curiosity — and somehow, I never looked back.  
               I've definitely learned something, I think...
@@ -52,6 +53,8 @@ export function HeroAbout() {
             </p>
 
             <ButtonResume/>
+            <ZigzagFlowLine/>
+
             </div>
 
         </div>
