@@ -51,7 +51,7 @@ export function NavigationSheet() {
         </Button>
       </SheetTrigger>
 
-      <SheetContent side="left" className="p-6 w-[80%] sm:w-64">
+      <SheetContent side="left" className="p-6 w-[80%] sm:w-64 bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-md border border-white/20 shadow-xl">
         <nav className="flex flex-col gap-8 text-lg mt-12 font-semibold">
           {navItems.map((item) => {
             const isHashLink = item.href.startsWith("#");
