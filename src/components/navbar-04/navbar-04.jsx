@@ -2,7 +2,8 @@ import { NavMenu } from "./nav-menu";
 import { NavigationSheet } from "./navigation-sheet";
 import { AuroraTextDemo } from "./navbarLogo";
 import ButtonHover12 from "./navGitbtn";
-import ThemeToggleButton from "../ui/theme-toggle-button";
+import ThemeToggleButton from "../theming/theme-toggle-button";
+
 
 const Navbar04Page = () => {
   return (
