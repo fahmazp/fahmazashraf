@@ -153,12 +153,12 @@
 }
 
 html {
+  view-transition-name: root;
   scroll-behavior: smooth;
 }
 
 body {
-      font-family: "Space Grotesk", sans-serif;
-      
+      font-family: "Space Grotesk", sans-serif;    
 }
 
 ::view-transition-group(root) {
