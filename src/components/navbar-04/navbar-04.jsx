@@ -1,8 +1,8 @@
 import { NavMenu } from "./nav-menu";
 import { NavigationSheet } from "./navigation-sheet";
 import { AuroraTextDemo } from "./navbarLogo";
-import ModeToggle from "../theming/mode-toggle";
 import ButtonHover12 from "./navGitbtn";
+import ThemeToggleButton from "../ui/theme-toggle-button";
 
 const Navbar04Page = () => {
   return (
@@ -20,7 +20,8 @@ const Navbar04Page = () => {
             <ButtonHover12/>
             </div>
 
-            <ModeToggle/>
+            {/* <ModeToggle/> */}
+            <ThemeToggleButton variant="circle-blur" start="bottom-left" />
             {/* Mobile Menu */}
             <div className="md:hidden overflow-hidden">
               <NavigationSheet />
