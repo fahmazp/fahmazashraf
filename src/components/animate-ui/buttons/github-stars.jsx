@@ -209,7 +209,7 @@ function GitHubStarsButton({
           )}
         </AnimatePresence>
       </div>
-      <span className="relative inline-flex">
+      <span className="relative inline-flex text-black dark:text-white text-[1px]">
         {renderNumberSegments(ghostFormattedNumber.number, ghostFormattedNumber.unit, true)}
         {renderNumberSegments(formattedResult.number, formattedResult.unit, false)}
       </span>

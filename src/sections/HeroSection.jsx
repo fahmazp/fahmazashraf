@@ -5,7 +5,6 @@ import { AvailablePulse } from "@/components/animations/availablePulse";
 import HeroShapeTri from "@/components/icon-animate/heroShapeTri";
 import HeroShapeHex from "@/components/icon-animate/heroShapeHex";
 import ZigzagLineDraw from "@/components/icon-animate/ZigzagLineDraw";
-import { AbstractShape } from "@/components/icon-animate/AbstractShape";
 
 export function HeroText() {
   return (
@@ -20,7 +19,7 @@ export function HeroText() {
         <AvailablePulse/>
         <HeroShapeTri/>
         <HeroShapeHex/>
-        <AbstractShape/>
+        {/* <AbstractShape/> */}
         <ZigzagLineDraw/>
       </div>
     </div>

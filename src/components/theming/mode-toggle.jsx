@@ -4,12 +4,21 @@ import { Sun, Moon } from "lucide-react";
 
 export default function ModeToggle() {
   const { theme, setTheme } = useTheme();
-
   const isDark = theme === "dark";
 
   const toggleTheme = () => {
     const nextTheme = theme === "dark" ? "light" : "dark";
-    setTheme(nextTheme);
+    // setTheme(nextTheme);
+        if (!document.startViewTransition) {
+      // Fallback for unsupported browsers
+      setTheme(nextTheme);
+      return;
+    }
+
+    // Animate the theme switch
+    document.startViewTransition(() => {
+      setTheme(nextTheme);
+    });
   };
 
   return (
