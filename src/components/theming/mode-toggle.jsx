@@ -7,8 +7,9 @@ export default function ModeToggle() {
   const isDark = theme === "dark";
 
   const toggleTheme = () => {
-    const nextTheme = theme === "dark" ? "light" : "dark";
+      const nextTheme = isDark ? "light" : "dark";
     // setTheme(nextTheme);
+
         if (!document.startViewTransition) {
       // Fallback for unsupported browsers
       setTheme(nextTheme);
