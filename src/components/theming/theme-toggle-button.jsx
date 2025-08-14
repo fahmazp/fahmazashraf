@@ -59,7 +59,7 @@ export default function ThemeToggleButton({
       onClick={toggleTheme}
       variant="ghost"
       size="icon"
-      className="w-9 p-0 h-9 relative group"
+      className="w-9 p-0 h-9 relative group rounded-full"
       name="Theme Toggle Button">
       <SunIcon
         className="size-[1rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />

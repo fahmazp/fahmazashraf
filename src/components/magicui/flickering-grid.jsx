@@ -1,4 +1,4 @@
-"use client";;
+"use client";
 import { cn } from "@/lib/utils";
 import React, {
   useCallback,
@@ -83,12 +83,12 @@ export const FlickeringGrid = ({
       for (let j = 0; j < rows; j++) {
         const opacity = squares[i * rows + j];
         ctx.fillStyle = `${memoizedColor}${opacity})`;
-        ctx.fillRect(
-          i * (squareSize + gridGap) * dpr,
-          j * (squareSize + gridGap) * dpr,
-          squareSize * dpr,
-          squareSize * dpr
-        );
+        const x = i * (squareSize + gridGap) * dpr + (squareSize * dpr) / 2;
+        const y = j * (squareSize + gridGap) * dpr + (squareSize * dpr) / 2;
+        const radius = (squareSize * dpr) / 2;
+        ctx.beginPath();
+        ctx.arc(x, y, radius, 0, 2 * Math.PI);
+        ctx.fill();
       }
     }
   }, [memoizedColor, squareSize, gridGap]);
@@ -157,7 +157,7 @@ export const FlickeringGrid = ({
   }, [setupCanvas, updateSquares, drawGrid, width, height, isInView]);
 
   return (
-    (<div
+    <div
       ref={containerRef}
       className={cn(`h-full w-full ${className}`)}
       {...props}>
@@ -168,6 +168,6 @@ export const FlickeringGrid = ({
           width: canvasSize.width,
           height: canvasSize.height,
         }} />
-    </div>)
+    </div>
   );
 };
