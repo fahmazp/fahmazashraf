@@ -1,6 +1,5 @@
 import { motion, useAnimation, useInView } from "framer-motion";
 import { useEffect, useRef } from "react";
-// import { useInView } from "framer-motion";
 
 export default function FooterConnect() {
   const controls = useAnimation();

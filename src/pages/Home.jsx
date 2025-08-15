@@ -5,8 +5,6 @@ import { ExperienceSection } from "@/sections/ExpSection";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import GitHubChart from "@/sections/GithubCode";
-import FooterConnect from "@/sections/Footer/FooterConnect";
-
 
 
 export default function Home() {
